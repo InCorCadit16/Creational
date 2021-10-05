@@ -1,0 +1,13 @@
+D:\Универ\Year 3\TMPS\Creational\Creational\bin\Debug\netcoreapp3.1\Creational.exe
+D:\Универ\Year 3\TMPS\Creational\Creational\bin\Debug\netcoreapp3.1\Creational.deps.json
+D:\Универ\Year 3\TMPS\Creational\Creational\bin\Debug\netcoreapp3.1\Creational.runtimeconfig.json
+D:\Универ\Year 3\TMPS\Creational\Creational\bin\Debug\netcoreapp3.1\Creational.runtimeconfig.dev.json
+D:\Универ\Year 3\TMPS\Creational\Creational\bin\Debug\netcoreapp3.1\Creational.dll
+D:\Универ\Year 3\TMPS\Creational\Creational\bin\Debug\netcoreapp3.1\Creational.pdb
+D:\Универ\Year 3\TMPS\Creational\Creational\obj\Debug\netcoreapp3.1\Creational.csprojAssemblyReference.cache
+D:\Универ\Year 3\TMPS\Creational\Creational\obj\Debug\netcoreapp3.1\Creational.AssemblyInfoInputs.cache
+D:\Универ\Year 3\TMPS\Creational\Creational\obj\Debug\netcoreapp3.1\Creational.AssemblyInfo.cs
+D:\Универ\Year 3\TMPS\Creational\Creational\obj\Debug\netcoreapp3.1\Creational.csproj.CoreCompileInputs.cache
+D:\Универ\Year 3\TMPS\Creational\Creational\obj\Debug\netcoreapp3.1\Creational.dll
+D:\Универ\Year 3\TMPS\Creational\Creational\obj\Debug\netcoreapp3.1\Creational.pdb
+D:\Универ\Year 3\TMPS\Creational\Creational\obj\Debug\netcoreapp3.1\Creational.genruntimeconfig.cache
