@@ -1,9 +1,6 @@
-﻿using Creational.Vehicles;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using GarageSimulation.Builders;
 
-namespace Creational
+namespace GarageSimulation.Factories
 {
     public abstract class VehicleFactory
     {

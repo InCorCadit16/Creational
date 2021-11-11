@@ -1,9 +1,10 @@
-﻿using Creational.Vehicles;
+﻿using GarageSimulation.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
-namespace Creational
+namespace Creational.Singletones
 {
     public class Garage
     {
@@ -19,10 +20,8 @@ namespace Creational
         public static Garage GetGarage()
         {
             lock (obj)
-            {
                 if (instance == null)
                     instance = new Garage();
-            }
 
             return instance;
         }
@@ -30,6 +29,11 @@ namespace Creational
         public void AddVehicle(Vehicle vehicle)
         {
             Vehicles.Add(vehicle);
+        }
+
+        public Vehicle GetVehicle(string regNumber)
+        {
+            return Vehicles.FirstOrDefault(v => v.RegistrationNumber == regNumber);
         }
 
         public void RemoveVehicle(Vehicle vehicle)

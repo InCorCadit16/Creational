@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Универ\\Year 3\\TMPS\\Creational\\Creational\\Creational.csproj",
-      "projectName": "Creational",
-      "projectPath": "D:\\Универ\\Year 3\\TMPS\\Creational\\Creational\\Creational.csproj",
+      "projectUniqueName": "D:\\Универ\\Year 3\\TMPS\\Creational\\Creational\\GarageSimulation.csproj",
+      "projectName": "GarageSimulation",
+      "projectPath": "D:\\Универ\\Year 3\\TMPS\\Creational\\Creational\\GarageSimulation.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "D:\\Универ\\Year 3\\TMPS\\Creational\\Creational\\obj\\",
       "projectStyle": "PackageReference",

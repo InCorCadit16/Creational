@@ -1,0 +1,13 @@
+D:\Универ\Year 3\TMPS\Creational\Creational\obj\Debug\netcoreapp3.1\GarageSimulation.csprojAssemblyReference.cache
+D:\Универ\Year 3\TMPS\Creational\Creational\obj\Debug\netcoreapp3.1\GarageSimulation.AssemblyInfoInputs.cache
+D:\Универ\Year 3\TMPS\Creational\Creational\obj\Debug\netcoreapp3.1\GarageSimulation.AssemblyInfo.cs
+D:\Универ\Year 3\TMPS\Creational\Creational\obj\Debug\netcoreapp3.1\GarageSimulation.csproj.CoreCompileInputs.cache
+D:\Универ\Year 3\TMPS\Creational\Creational\bin\Debug\netcoreapp3.1\GarageSimulation.exe
+D:\Универ\Year 3\TMPS\Creational\Creational\bin\Debug\netcoreapp3.1\GarageSimulation.deps.json
+D:\Универ\Year 3\TMPS\Creational\Creational\bin\Debug\netcoreapp3.1\GarageSimulation.runtimeconfig.json
+D:\Универ\Year 3\TMPS\Creational\Creational\bin\Debug\netcoreapp3.1\GarageSimulation.runtimeconfig.dev.json
+D:\Универ\Year 3\TMPS\Creational\Creational\bin\Debug\netcoreapp3.1\GarageSimulation.dll
+D:\Универ\Year 3\TMPS\Creational\Creational\bin\Debug\netcoreapp3.1\GarageSimulation.pdb
+D:\Универ\Year 3\TMPS\Creational\Creational\obj\Debug\netcoreapp3.1\GarageSimulation.dll
+D:\Универ\Year 3\TMPS\Creational\Creational\obj\Debug\netcoreapp3.1\GarageSimulation.pdb
+D:\Универ\Year 3\TMPS\Creational\Creational\obj\Debug\netcoreapp3.1\GarageSimulation.genruntimeconfig.cache

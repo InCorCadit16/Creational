@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 
-namespace Creational.Vehicles
+using GarageSimulation.Models;
+
+namespace GarageSimulation.Builders
 {
     public abstract class VehicleBuilder
     {

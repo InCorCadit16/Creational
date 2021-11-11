@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Creational.Vehicles
+namespace GarageSimulation.Models
 {
     public class Vehicle
     {
@@ -15,6 +15,11 @@ namespace Creational.Vehicles
         public Vehicle(int WheelsCount)
         {
             this.WheelsCount = WheelsCount;
+        }
+
+        public override string ToString()
+        {
+            return $"{Manufacturer} {Model} ({RegistrationNumber})";
         }
 
     }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Creational.Vehicles
+namespace GarageSimulation.Models
 {
     public class Motorbike : Vehicle
     {
