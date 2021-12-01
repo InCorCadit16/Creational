@@ -1,3 +1,82 @@
+# Topic: Behavioral Design Patterns
+## Author: Rosca Alexandru
+
+## Theory:
+Behavioral design pattern are used to ensure an effective communication between entities.
+Commonly used behavioral patterns:
+
+* Chain of Responsibility
+* Command
+* Interpreter
+* Iterator
+* Mediator
+* Observer
+* Strategy
+
+
+## Implementation:
+
+In last commit I've decided to add functionality to modify the Car objects.
+First of all I added the Mechanician class which is ables to do some car modifications using Garage class as Mediator:
+
+        public class Mechanician
+        {
+            private readonly Garage garage;
+            public string Name { get; set; }
+            public int Proficiency { get; set; }
+
+
+            public Mechanician(Garage garage)
+            {
+                this.garage = garage;
+            }
+
+            public void ModifyVehicle(Car car, ICarModification modification)
+            {
+                garage.DoCarWorks(car, modification, this);
+            }
+        }
+ 
+Additional method in Garage class:
+
+        public void DoCarWorks(Car car, ICarModification modification, Mechanician mech)
+        {
+            Console.WriteLine($"\nMechanician {mech.Name} started to work on {car.Manufacturer} {car.Model}");
+            modification.Apply(car, mech.Proficiency);
+            Console.WriteLine();
+        }
+
+Also, I decided to add ability to execute different modifications using Strategy pattern.
+I've create interface ICarModification:
+
+        public interface ICarModification
+        {
+            public abstract void Apply(Car car, int proficiency);
+        }
+
+And a few examples of real car modifications, such as this:
+
+        public class ChangeBoostModification : ICarModification
+        {
+
+            public void Apply(Car car, int proficiency) 
+            {
+                if (typeof(TurboChargedEngine) == car.Engine.GetType())
+                {
+                    var engine = (TurboChargedEngine)car.Engine;
+                    engine.Boost += proficiency * 0.3f;
+                    Console.WriteLine($"Boosted {car.Manufacturer} {car.Model} by {proficiency * 0.3f}.");
+                } else
+                {
+                    Console.WriteLine($"Cannot boost {car.Manufacturer} {car.Model} because its engine has no turbo.");
+                }
+            }
+        }
+
+## Screenshot
+  ![Alt Text](https://i.ibb.co/3NJNZN3/image.png)
+
+
 # Topic: Structural Design Patterns
 ## Author: Rosca Alexandru
 
