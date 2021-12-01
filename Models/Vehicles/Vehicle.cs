@@ -11,6 +11,7 @@ namespace GarageSimulation.Models
         public string Manufacturer { get; set; }
         public string Model { get; set; }
         public int EngineVolume { get; set; }
+        public Engine Engine { get; set; }
 
         public Vehicle(int WheelsCount)
         {

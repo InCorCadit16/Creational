@@ -5,7 +5,7 @@ using System.Text;
 
 namespace GarageSimulation.Models
 {
-    class Engine : Detail
+    public class Engine : Detail
     {
         public int Volume { get; set; }
         public int CylinderNumber { get; set; }

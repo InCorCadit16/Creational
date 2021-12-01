@@ -1,4 +1,5 @@
 ﻿using GarageSimulation.Models;
+using GarageSimulation.Models.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +11,13 @@ namespace Creational.Singletones
     {
         private static object obj = new object();
         private readonly List<Vehicle> Vehicles;
+        private readonly List<Mechanician> Mechanicians;
         private static Garage instance;
 
         private Garage()
         {
             Vehicles = new List<Vehicle>();
+            Mechanicians = new List<Mechanician>();
         }
 
         public static Garage GetGarage()
@@ -39,6 +42,28 @@ namespace Creational.Singletones
         public void RemoveVehicle(Vehicle vehicle)
         {
             Vehicles.Remove(vehicle);
+        }
+
+        public void AddMechanician(Mechanician mechanician)
+        {
+            Mechanicians.Add(mechanician);
+        }
+
+        public Mechanician GetMechanician(int index)
+        {
+            return Mechanicians[index];
+        }
+
+        public void RemoveMechanician(Mechanician mechanician)
+        {
+            Mechanicians.Remove(mechanician);
+        }
+
+        public void DoCarWorks(Car car, ICarModification modification, Mechanician mech)
+        {
+            Console.WriteLine($"\nMechanician {mech.Name} started to work on {car.Manufacturer} {car.Model}");
+            modification.Apply(car, mech.Proficiency);
+            Console.WriteLine();
         }
 
         public void PrintVehicles()

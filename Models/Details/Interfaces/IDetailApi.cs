@@ -5,7 +5,7 @@ using System.Text;
 
 namespace GarageSimulation.Models
 {
-    interface IDetailApi
+    public interface IDetailApi
     {
         public void Install(Vehicle vehicle, Detail detail);
     }

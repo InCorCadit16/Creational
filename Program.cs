@@ -2,6 +2,7 @@
 using GarageSimulation.Factories;
 using GarageSimulation.FlyWeights;
 using GarageSimulation.Models;
+using GarageSimulation.Models.Modifications;
 using System;
 using System.Collections.Generic;
 
@@ -13,7 +14,8 @@ namespace Creational
         static void Main(string[] args)
         {
             // AddCars();
-            UseDetailsAndTools();
+            // UseDetailsAndTools();
+            AddModifications();
         }
 
 
@@ -105,5 +107,68 @@ namespace Creational
             }
 
         }
+
+        // Show functionality implemented with behavioural patterns
+        public static void AddModifications()
+        {
+            Garage garage = Garage.GetGarage();
+            var carFactory = new CarFactory();
+            garage.AddVehicle
+            (
+                carFactory.GetVehicleBuilder()
+                .SetRegistrationNumber("AZD153")
+                .SetManufacturer("Mazda")
+                .SetModel("RX-7")
+                .SetEngineVolume(1300)
+                .CreateVehicle()
+            );
+
+            garage.GetVehicle("AZD153").Engine = new TurboChargedEngine(new Engine(new RotorEngine()));
+
+            garage.AddVehicle
+            (   
+                carFactory.GetVehicleBuilder()
+                .SetRegistrationNumber("SQM705")
+                .SetManufacturer("Ford")
+                .SetModel("Mustang")
+                .SetEngineVolume(2300)
+                .CreateVehicle()
+            );
+
+            garage.GetVehicle("SQM705").Engine = new TurboChargedEngine(new Engine(new InlineEngine()));
+
+            garage.AddMechanician
+            (
+                new Mechanician(garage)
+                {
+                    Name = "Bart",
+                    Proficiency = 3
+                }
+            );
+
+            garage.AddMechanician
+            (
+                new Mechanician(garage)
+                {
+                    Name = "Jackson",
+                    Proficiency = 1
+                }
+            );
+
+            garage.AddMechanician
+            (
+                new Mechanician(garage)
+                {
+                    Name = "Simon",
+                    Proficiency = 2
+                }
+            );
+
+            garage.GetMechanician(0).ModifyVehicle((Car) garage.GetVehicle("AZD153"), new ChangeBoostModification());
+            garage.GetMechanician(1).ModifyVehicle((Car) garage.GetVehicle("AZD153"), new ChangeEnginePistonsModifications());
+            garage.GetMechanician(2).ModifyVehicle((Car) garage.GetVehicle("SQM705"), new ReplaceBrakesModification());
+            
+        }
+
     }
 }

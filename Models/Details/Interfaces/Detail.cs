@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GarageSimulation.Models.Interfaces
 {
-    abstract class Detail
+    public abstract class Detail
     {
         public readonly IDetailApi detailApi;
 
